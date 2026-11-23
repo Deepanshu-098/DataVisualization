@@ -43,6 +43,8 @@ if df.empty:
 # --------------------------------------------------------------
 # 3. CREATE DASH APP
 app = Dash(__name__)
+server = app.server
+
 
 max_price = max(1000, int(df['price'].max()))
 
